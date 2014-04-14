@@ -1,0 +1,67 @@
+from binhex import openrsrc
+from distutils.command.install import install
+from idlelib.SearchEngine import get
+import io
+import re
+from nltk import tokenize
+from nltk import PorterStemmer
+from nltk.corpus.reader.wordnet import _WordNetObject
+from numpy.core.defchararray import index
+
+featurelist = []
+num_of_words = [0 for x in xrange(5)]
+wordlist = [[] for x in xrange(5)]
+probabilitywords = [0 for x in xrange(5)]
+
+def readFeaturesfromFile(file):
+    fileName = open(file,'r')
+    global featurelist
+    featurelist = cleanFeatures(fileName.readlines());
+
+def cleanFeatures(features):
+    i = 0
+    while i < len(features):
+        features[i] = re.sub("\\n", "", features[i].lower())
+        if features[i] == "":
+            features.remove(features[i])
+            i -= 1
+        i += 1
+    return features
+
+
+
+def prepareDocuments(file, index):
+    fileName = open(file,'r')
+    sentences = fileName.readlines()
+    i = 0
+    global num_of_words,wordlist
+    #stemmer = PorterStemmer()
+    while i < len(sentences):
+        wordlist[index].extend(tokenize.word_tokenize(sentences[i])) #CLEAN document!!
+        #wordlist[index].extend([stemmer.stem(x.lower()) for x in tokenize.word_tokenize(sentences[i])]) #CLEAN document!!
+        i += 1
+    num_of_words[index] = len(wordlist[index])
+
+readFeaturesfromFile('tempDictionary.txt')
+for i in range(0, 5):
+    prepareDocuments("train_"+str(i)+".tsv", i)
+
+classifiers = [[0, 0] for x in featurelist]
+j = 0
+matches = []
+for feature in featurelist:
+    # print feature, wordlist[0].count(feature), wordlist[0]
+    for i in range(0, 5):
+        for word in wordlist[i]:
+            regx = "\""+feature+"\""
+            matches.extend(re.search(regx,word))
+        probabilitywords = len(matches)
+    classifiers[j][0] = feature
+    classifiers[j][1] = probabilitywords.index(max(probabilitywords))
+    j += 1
+    print feature, probabilitywords
+
+
+
+
+
