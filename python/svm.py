@@ -1,5 +1,5 @@
 
-
+from nltk.tokenize import word_tokenize
 
 def get_word_list(sentences, index):
     print "Preparing Word List ", index, "......."
@@ -18,4 +18,4 @@ def get_file_lines(file, mode='r'):
 def main():
     for i in range(0, 5):
         get_word_list(get_file_lines("data/train_" + str(i) + ".tsv"), i)
-    train(get_file_lines('dictionary/tempDictionary.txt'))
+   # train(get_file_lines('dictionary/tempDictionary.txt'))

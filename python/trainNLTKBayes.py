@@ -5,11 +5,12 @@ from nltk.corpus import stopwords
 from nltk import corpus
 import random
 import pickle
+import string
 from collections import Counter
-from nltk.tokenize import word_tokenize
-import numpy as np
+#from nltk.tokenize import word_tokenize
+#import numpy as np
 from cmath import log, exp
-#from math import log, exp
+#from math import log, exp path=
 
 class MyDict(dict):
     def __getitem__(self, key):
@@ -28,7 +29,7 @@ def get_word_list(sentences, index):
     for sentence in sentences:
         #wordlist[index].extend(tokenize.word_tokenize(sentences[i])) #CLEAN document!!
         word_list[index].extend([stemmer.stem(word.lower()) for word in set(word_tokenize(sentence))]) #CLEAN document!!
-    #print wordlist[index]
+        print word_list[index]
 
 def prune_features(features):
     for i in range(0, 5):
@@ -117,13 +118,32 @@ def get_file_lines(file, mode='r'):
     file_lines = file_handler.readlines()
     file_handler.close()
     return file_lines
+def find_bigrams(input_list):
+    return [input_list[i] + " " + input_list[i+1] for i in range(0,(len(input_list)-1))]
+def bi_grams(datafile,idex):
+    try:
+        # read the contents of the whole file into ''filecontents''
+        filecontents=get_file_lines(datafile)
+        file2=open("./feature/Ngrams/bigram_"+ str(idex) + ".tsv", 'w')
+        for filecontent in filecontents: 
+            # strip all punctuation at the beginning and end of words, and 
+            # convert all words to lowercase
+            words= [ word.strip(string.punctuation).lower() for word in set(word_tokenize(filecontent)) ]
+            #print words                    
+            bigram_dict=find_bigrams(words)
+            for bigram_item in bigram_dict :
+                file2.write(str(bigram_item) + "\n")
+    except IOError:
+                print "I could not find the file, Please try again."
+                exit()      
+    
 
 def main():
     for i in range(0, 5):
-        get_word_list(get_file_lines("train_" + str(i) + ".tsv"), i)
-    train(get_file_lines('tempDictionary.txt'))
-    classify(get_file_lines('test.tsv'))
-
+        #get_word_list(get_file_lines("./data/train_" + str(i) + ".tsv"), i)
+        bi_grams(("./data/train_" + str(i) + ".tsv"), i)  
+    #train(get_file_lines('tempDictionary.txt'))
+    #classify(get_file_lines('test.tsv'))
 main()
 
 

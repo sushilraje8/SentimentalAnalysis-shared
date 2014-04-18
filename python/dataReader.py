@@ -1,5 +1,5 @@
 import random
-import io
+#import io
 import pickle
 
 with open("trainML.tsv",'r') as ofile:

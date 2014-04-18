@@ -1,4 +1,4 @@
-import io
+#import io
 cntlin = 0
 ofile = open('train.tsv', 'r')
 fln = ofile.readlines()
