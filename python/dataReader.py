@@ -1,8 +1,6 @@
 import random
-#import io
-import pickle
 
-with open("trainML.tsv",'r') as ofile:
+with open("data/trainML.tsv",'r') as ofile:
     cntlin = 0
     i = 0
     prev = -1
@@ -13,9 +11,9 @@ with open("trainML.tsv",'r') as ofile:
     trainScore = [0, 0, 0, 0, 0]
     testScore = [0, 0, 0, 0, 0]
 
-    train = open('train.tsv', 'w')
-    test = open('test.tsv', 'w')
-    metaData = open('metadata.txt', 'w')
+    train = open('data/train_n.tsv', 'w')
+    test = open('data/test_n.tsv', 'w')
+    metaData = open('data/metadata_n.txt', 'w')
 
     rndln = random.sample(range(1, 8544), 6835)
     fln = ofile.readlines()

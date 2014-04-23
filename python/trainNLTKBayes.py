@@ -1,22 +1,17 @@
-import io
-from nltk.tokenize import word_tokenize,sent_tokenize
-from nltk import PorterStemmer
-from nltk.corpus import stopwords
-from nltk import corpus
-import random
-import pickle
-import string
-from collections import Counter
-#from nltk.tokenize import word_tokenize
-#import numpy as np
-from cmath import log, exp
-#from math import log, exp path=
+import sys
+sys.path.append('C:\Users\Sushil-PC\Dropbox\SentimentalAnalysis-shared\python\pybrain-master\pybrain-master\pybrain')
+
+from cmath import log
+from nltk import PorterStemmer,pos_tag
+from nltk.tokenize import word_tokenize
+import nltk.help as nhelp
+#from math import log, exp
 
 class MyDict(dict):
     def __getitem__(self, key):
         if key in self:
             return self.get(key)
-        return 0
+        #return 0
 
 word_list = [[] for x in range(0, 5)]
 stemmer = PorterStemmer()
@@ -26,10 +21,30 @@ total_words = [0, 0, 0, 0, 0]
 def get_word_list(sentences, index):
     print "Preparing Word List ", index, "......."
     global word_list,stemmer
+    punctuation = ['!', '.', ';', ':', '\'', '"','`']
+    exceptions = ['\n', '\'s', '\'t', 'n\'t','not']
     for sentence in sentences:
         #wordlist[index].extend(tokenize.word_tokenize(sentences[i])) #CLEAN document!!
+        #word_list[index].extend([stemmer.stem(word_tag.lower()) for word_tag in set(word_tokenize(sentence))])
+
+        knot = 0
+        for word_tag in set(word_tokenize(sentence)):
+            if word_tag.lower() == "not":
+                knot = 1
+            elif word_tag in punctuation:
+                knot = 0
+            if word_tag.lower() not in punctuation and word_tag.lower() not in exceptions:
+                if knot == 0:
+                    word_list[index].append(stemmer.stem(word_tag.lower()))# if word_tag[1] in ['WRB', 'VBZ','VBP','VBN', 'VBG', 'VBD', 'VB', 'RBS', 'RBR', 'RB', 'JJS', 'JJR', 'JJ' ]]) #CLEAN document!!
+                else:
+                    word_list[index].append("not_"+stemmer.stem(word_tag.lower()))# if word_tag[1] in ['WRB', 'VBZ','VBP','VBN', 'VBG', 'VBD', 'VB', 'RBS', 'RBR', 'RB', 'JJS', 'JJR', 'JJ' ]]) #CLEAN document!!
+
+    #word_list[index] = list(set(word_list[index])) # eliminating duplicates)
+    print word_list#[index]
+"""
         word_list[index].extend([stemmer.stem(word.lower()) for word in set(word_tokenize(sentence))]) #CLEAN document!!
         print word_list[index]
+"""
 
 def prune_features(features):
     for i in range(0, 5):
@@ -51,12 +66,14 @@ def train(features):
         for i in range(0, 5):
             if feature_polarity[i][feature] is None:
                 feature_polarity[i][feature] = 0
+                feature_polarity[4-i]["not_"+feature] = 0
             feature_polarity[i][feature] += word_list[i].count(feature)
+            feature_polarity[4-i]["not_"+feature] += word_list[i].count("not_"+feature)
         j += 1
         if j % 1000 == 0:
             print "     ", j, " features processed ......."
-    prune_features(stem_features)
-    file = open("trainedFeatures.txt","w")
+    #prune_features(stem_features)
+    file = open("feature/trainedFeatures.txt","w")
     for i in range(0, 5):
         for feature in feature_polarity[i]:
             file.write(str(i)+" "+feature+" "+str(feature_polarity[i][feature])+"\n")
@@ -83,15 +100,22 @@ def classify(sentences):
         if prev_sent != curr_sent:
             sent_word_list = [stemmer.stem(word.lower()) for word in set(word_tokenize(sentence))]
             for i in range(0, 5):
-                polarity[i] = 1/abs(sum(log((feature_polarity[i][word] + 1.0) / (2.0 * total_words[i])) for word in sent_word_list if feature_polarity[i][word] is not None))
-
+                polarity[i] = 1/abs(sum(log((feature_polarity[i][word] + 1.0) / (2.0 * total_words[i])) if feature_polarity[i][word] is not None else ( 1/(2.0*(total_words[i]))) for word in sent_word_list))
+            for word in sent_word_list:
+                if feature_polarity[i][word] is not None:
+                    for j in range(0, 5):
+                        score = polarity.index(max(polarity))
+                        if score - get_sentence_score(sentence) != 0:
+                            print j, word, feature_polarity[j][word], feature_polarity[j][word]/total_words[j], 'LP: ',(feature_polarity[j][word] + 1.0) / (2.0 * total_words[j])
 
             score = polarity.index(max(polarity))
-            if score - get_sentence_score(sentence) == 0:
+            if score - get_sentence_score(sentence) != 0:
                 matches += 1
-            print "Polarity :", polarity.index(max(polarity)), "Sentence :", sentence
-            print polarity,matches*1.0/counter,counter
+                print polarity, matches*1.0/counter
+                print "Polarity :", polarity.index(max(polarity)), "Sentence :", sentence
             counter += 1
+            print matches,counter
+
         prev_sent = curr_sent
 
 """
@@ -107,7 +131,7 @@ def get_trained_features():
 
 def get_sentence_num(lines):
     columns = lines.split("\t");
-    return  int(columns[1].strip("'"))
+    return int(columns[1].strip("'"))
 
 def get_sentence_score(lines):
     columns = lines.split("\t");
@@ -118,35 +142,11 @@ def get_file_lines(file, mode='r'):
     file_lines = file_handler.readlines()
     file_handler.close()
     return file_lines
-def find_bigrams(input_list):
-    return [input_list[i] + " " + input_list[i+1] for i in range(0,(len(input_list)-1))]
-def bi_grams(datafile,idex):
-    try:
-        # read the contents of the whole file into ''filecontents''
-        filecontents=get_file_lines(datafile)
-        file2=open("./feature/Ngrams/bigram_"+ str(idex) + ".tsv", 'w')
-        for filecontent in filecontents: 
-            # strip all punctuation at the beginning and end of words, and 
-            # convert all words to lowercase
-            words= [ word.strip(string.punctuation).lower() for word in set(word_tokenize(filecontent)) ]
-            #print words                    
-            bigram_dict=find_bigrams(words)
-            for bigram_item in bigram_dict :
-                file2.write(str(bigram_item) + "\n")
-    except IOError:
-                print "I could not find the file, Please try again."
-                exit()      
-    
 
 def main():
     for i in range(0, 5):
-        #get_word_list(get_file_lines("./data/train_" + str(i) + ".tsv"), i)
-        bi_grams(("./data/train_" + str(i) + ".tsv"), i)  
-    #train(get_file_lines('tempDictionary.txt'))
-    #classify(get_file_lines('test.tsv'))
+        get_word_list(get_file_lines("data/train_" + str(i) + ".tsv"), i)
+    train(get_file_lines('dictionary/tempDictionary.txt'))
+    classify(get_file_lines('data/test.tsv'))
+
 main()
-
-
-
-
-
