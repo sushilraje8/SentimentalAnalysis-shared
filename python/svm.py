@@ -80,7 +80,6 @@ def predict(test_data):
     y_display = [0 for i in range(0, len(y[0]))]
     for i in range(0, 5):
         print "Checking for class ", i
-        print model[i]
         p_label, p_acc, p_val = svm_predict(y[i], X, model[i])
         y_final = [j if p_label[int(j)] == 1.0 else y_final[key] for key, j in enumerate(p_label)]
         print y[i].count(1), p_label.count(1.0), len(p_label)
@@ -152,16 +151,20 @@ def pickle_dump_wrapper(obj, file):
     oFile.close()
 
 def main(re_train):
+    global model
     if re_train:
         prepare_data()
         model = [train(i) for i in range(0, 5)]
 
         for i in range(0, 5):
             print "Saving model!!!!...."
-            svm_save_model('models/Movie_Reviews-'+str(i)+'.model_1', model[i])
+            svm_save_model('models/Movie_Reviews-'+str(i)+'.model', model[i])
     else:
         get_models()
+
+
     test_data = get_file_lines("data/trainML.tsv")
+
     predict(test_data)
     #predict2(test_data)
 

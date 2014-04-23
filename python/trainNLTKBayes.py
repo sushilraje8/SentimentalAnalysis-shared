@@ -41,10 +41,6 @@ def get_word_list(sentences, index):
 
     #word_list[index] = list(set(word_list[index])) # eliminating duplicates)
     print word_list#[index]
-"""
-        word_list[index].extend([stemmer.stem(word.lower()) for word in set(word_tokenize(sentence))]) #CLEAN document!!
-        print word_list[index]
-"""
 
 def prune_features(features):
     for i in range(0, 5):
@@ -106,7 +102,7 @@ def classify(sentences):
                     for j in range(0, 5):
                         score = polarity.index(max(polarity))
                         if score - get_sentence_score(sentence) != 0:
-                            print j, word, feature_polarity[j][word], feature_polarity[j][word]/total_words[j], 'LP: ',(feature_polarity[j][word] + 1.0) / (2.0 * total_words[j])
+                            print j, word, feature_polarity[j][word], feature_polarity[j][word]/total_words[i], 'LP: ',(feature_polarity[i][word] + 1.0) / (2.0 * total_words[i])
 
             score = polarity.index(max(polarity))
             if score - get_sentence_score(sentence) != 0:
