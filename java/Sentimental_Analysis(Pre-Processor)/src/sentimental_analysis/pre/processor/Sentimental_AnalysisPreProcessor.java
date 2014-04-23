@@ -35,7 +35,7 @@ public class Sentimental_AnalysisPreProcessor {
          String[] Sentences = SAP.getData(1,6000);//
          Set tokens = tokenizerM.getTokens(Sentences);
         try {
-            FileWriter dictionary = new FileWriter("C:\\Users\\Sushil-PC\\Dropbox\\SentimentalAnalysis-shared\\python\\tempDictionaryn.txt");
+            FileWriter dictionary = new FileWriter("C:\\Users\\Sushil-PC\\Dropbox\\SentimentalAnalysis-shared\\python\\dictionary\\tempDictionaryn.txt");
             System.out.println(StringUtils.join(tokens,","));
             dictionary.write(StringUtils.join(tokens,"\n"));
             dictionary.close();
@@ -52,7 +52,7 @@ public class Sentimental_AnalysisPreProcessor {
         int line_counter = 1,current_sentence = -1, previous_sentence = -1, sentence_counter = 0;
         String[] fData = new String[number_of_sentences];
         try {
-            BufferedReader buffer = new BufferedReader(new FileReader("C:\\Users\\Sushil-PC\\Dropbox\\SentimentalAnalysis-shared\\python\\trainML.tsv"));
+            BufferedReader buffer = new BufferedReader(new FileReader("C:\\Users\\Sushil-PC\\Dropbox\\SentimentalAnalysis-shared\\python\\data\\trainML.tsv"));
             while((line = buffer.readLine()) != null){
                 lineContents = line.split("\t");
                 current_sentence = Integer.parseInt(lineContents[1]);
