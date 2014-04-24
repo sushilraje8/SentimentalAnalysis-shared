@@ -53,7 +53,9 @@ public class TokenizerM {
     private String[] cleanWord(String[] tokens){
         int i = 0;
         for( String token : tokens){
-            tokens[i] = token.replaceAll("(\'|\")","");
+            if(!token.matches("[0-9]+")){
+                tokens[i] = token.replaceAll("(\'|\")","");
+            }
         }
         return tokens;
     }
