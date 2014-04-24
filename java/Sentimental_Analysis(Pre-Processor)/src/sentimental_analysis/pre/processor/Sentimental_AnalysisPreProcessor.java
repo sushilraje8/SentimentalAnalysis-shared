@@ -35,7 +35,7 @@ public class Sentimental_AnalysisPreProcessor {
          String[] Sentences = SAP.getData(1,6000);//
          Set tokens = tokenizerM.getTokens(Sentences);
         try {
-            FileWriter dictionary = new FileWriter("C:\\Users\\Sushil-PC\\Dropbox\\SentimentalAnalysis-shared\\python\\dictionary\\tempDictionaryn.txt");
+            FileWriter dictionary = new FileWriter("C:\\Users\\Sushil-PC\\Dropbox\\SentimentalAnalysis-shared\\python\\dictionary\\tempDictionarywonouns.txt");
             System.out.println(StringUtils.join(tokens,","));
             dictionary.write(StringUtils.join(tokens,"\n"));
             dictionary.close();

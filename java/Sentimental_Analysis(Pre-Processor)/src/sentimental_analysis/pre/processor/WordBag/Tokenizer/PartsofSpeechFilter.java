@@ -97,9 +97,15 @@ public class PartsofSpeechFilter {
             "VBN",
             "VBZ"
         };
+        String[] POSi = new String[] {
+            "NN",
+            "NNS",
+            "NNP",
+            "NNPS"
+        };
         int i = 0;
         for(String tag:tags){
-            if(ArrayUtils.contains(POS, tag.trim())){
+            if(!ArrayUtils.contains(POSi, tag.trim())){
                 positions.add(i);
             }
             i++;
