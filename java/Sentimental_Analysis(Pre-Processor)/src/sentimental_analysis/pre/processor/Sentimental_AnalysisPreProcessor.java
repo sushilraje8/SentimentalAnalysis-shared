@@ -45,7 +45,7 @@ public class Sentimental_AnalysisPreProcessor {
          
         
     }
-    private String[] getData(int start_line, int number_of_sentences){
+    protected String[] getData(int start_line, int number_of_sentences){
         
         String line = "";
         String[] lineContents = new String[4];
