@@ -1730,7 +1730,6 @@
 0 not_romantic-comedi 0
 0 rosa 0
 0 merit 3
-0 buckaroo 0
 0 not_offic 0
 0 ill-construct 0
 0 bright 1
@@ -11744,7 +11743,6 @@
 0 romantic 0
 0 not_costar 0
 0 possibl 39
-0 not_buckaroo 0
 0 not_abject 0
 0 not_idl 0
 0 nostalg 0
@@ -15179,7 +15177,7 @@
 0 choke 2
 0 surround 10
 0 unfortun 10
-0 festiv 4
+0 festiv 2
 0 dinner 0
 0 not_b-movi 0
 0 not_insult 0
@@ -20648,7 +20646,6 @@
 1 not_romantic-comedi 0
 1 rosa 0
 1 merit 15
-1 buckaroo 0
 1 not_offic 0
 1 ill-construct 0
 1 bright 1
@@ -30662,7 +30659,6 @@
 1 romantic 0
 1 not_costar 0
 1 possibl 18
-1 not_buckaroo 0
 1 not_abject 0
 1 not_idl 0
 1 nostalg 0
@@ -34097,7 +34093,7 @@
 1 choke 0
 1 surround 20
 1 unfortun 18
-1 festiv 4
+1 festiv 2
 1 dinner 1
 1 not_b-movi 0
 1 not_insult 0
@@ -39566,7 +39562,6 @@
 2 not_romantic-comedi 0
 2 rosa 0
 2 merit 3
-2 buckaroo 0
 2 not_offic 0
 2 ill-construct 0
 2 bright 0
@@ -49580,7 +49575,6 @@
 2 romantic 0
 2 not_costar 0
 2 possibl 24
-2 not_buckaroo 0
 2 not_abject 0
 2 not_idl 0
 2 nostalg 0
@@ -53015,7 +53009,7 @@
 2 choke 2
 2 surround 15
 2 unfortun 12
-2 festiv 6
+2 festiv 3
 2 dinner 1
 2 not_b-movi 0
 2 not_insult 0
@@ -58483,7 +58477,6 @@
 3 not_romantic-comedi 0
 3 rosa 0
 3 merit 6
-3 buckaroo 0
 3 not_offic 0
 3 ill-construct 0
 3 bright 3
@@ -68498,7 +68491,6 @@
 3 romantic 0
 3 not_costar 0
 3 possibl 15
-3 not_buckaroo 0
 3 not_abject 0
 3 not_idl 0
 3 nostalg 1
@@ -77401,7 +77393,6 @@
 4 not_romantic-comedi 0
 4 rosa 1
 4 merit 0
-4 buckaroo 0
 4 not_offic 0
 4 ill-construct 0
 4 bright 0
@@ -87416,7 +87407,6 @@
 4 romantic 2
 4 not_costar 0
 4 possibl 21
-4 not_buckaroo 0
 4 not_abject 0
 4 not_idl 0
 4 nostalg 1
@@ -90851,7 +90841,7 @@
 4 choke 0
 4 surround 0
 4 unfortun 0
-4 festiv 6
+4 festiv 3
 4 dinner 0
 4 not_b-movi 0
 4 not_insult 0

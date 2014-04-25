@@ -1,7 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2ee72d2c-912b-43bc-81f2-7b40265a81f4" name="Default" comment="" />
+    <list default="true" id="2ee72d2c-912b-43bc-81f2-7b40265a81f4" name="Default" comment="">
+      <change type="DELETED" beforePath="C:\Users\Sushil-PC\Dropbox\SentimentalAnalysis-shared\python\svm.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Sushil-PC\Dropbox\SentimentalAnalysis-shared\python\train" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../java/Sentimental_Analysis(Pre-Processor)/build/classes/sentimental_analysis/pre/processor/Sentimental_AnalysisPreProcessor.class" afterPath="$PROJECT_DIR$/../java/Sentimental_Analysis(Pre-Processor)/build/classes/sentimental_analysis/pre/processor/Sentimental_AnalysisPreProcessor.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../java/Sentimental_Analysis(Pre-Processor)/build/classes/sentimental_analysis/pre/processor/WordBag/Tokenizer/TokenizerM.class" afterPath="$PROJECT_DIR$/../java/Sentimental_Analysis(Pre-Processor)/build/classes/sentimental_analysis/pre/processor/WordBag/Tokenizer/TokenizerM.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/Movie_Reviews-0.model" afterPath="$PROJECT_DIR$/models/Movie_Reviews-0.model" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/Movie_Reviews-1.model" afterPath="$PROJECT_DIR$/models/Movie_Reviews-1.model" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/Movie_Reviews-2.model" afterPath="$PROJECT_DIR$/models/Movie_Reviews-2.model" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/Movie_Reviews-3.model" afterPath="$PROJECT_DIR$/models/Movie_Reviews-3.model" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/Movie_Reviews-4.model" afterPath="$PROJECT_DIR$/models/Movie_Reviews-4.model" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../java/Sentimental_Analysis(Pre-Processor)/src/sentimental_analysis/pre/processor/WordBag/Tokenizer/TokenizerM.java" afterPath="$PROJECT_DIR$/../java/Sentimental_Analysis(Pre-Processor)/src/sentimental_analysis/pre/processor/WordBag/Tokenizer/TokenizerM.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/binsvm.py" afterPath="$PROJECT_DIR$/binsvm.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/test.tsv" afterPath="$PROJECT_DIR$/data/test.tsv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trainNLTKBayes.py" afterPath="$PROJECT_DIR$/trainNLTKBayes.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/feature/trainedFeatures.txt" afterPath="$PROJECT_DIR$/feature/trainedFeatures.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="python.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,91 +39,46 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="svm.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/svm.py">
+      <file leaf-file-name="binsvm.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/binsvm.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="43" selection-start="1986" selection-end="1994" vertical-scroll-proportion="0.33197555" vertical-offset="721" max-vertical-offset="3043">
+            <state line="30" column="18" selection-start="1253" selection-end="1253" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3196">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="metadata.txt" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/metadata.txt">
+      <file leaf-file-name="train_0.tsv" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/data/train_0.tsv">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
+            <state line="7" column="30" selection-start="855" selection-end="855" vertical-scroll-proportion="0.16831683" vertical-offset="0" max-vertical-offset="14960">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="trainNLTKBayes.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/trainNLTKBayes.py">
+      <file leaf-file-name="svm.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/libsvm-3.18/libsvm-3.18/python/svm.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="144" column="58" selection-start="5930" selection-end="5930" vertical-scroll-proportion="-13.84" vertical-offset="2102" max-vertical-offset="2601">
+            <state line="82" column="0" selection-start="2253" selection-end="2253" vertical-scroll-proportion="0.0" vertical-offset="1394" max-vertical-offset="5491">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="stemDictionary.txt" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dictionary/stemDictionary.txt">
+      <file leaf-file-name="tempDictionaryn.txt" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dictionary/tempDictionaryn.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="171666">
+            <state line="5942" column="8" selection-start="54378" selection-end="54378" vertical-scroll-proportion="0.0" vertical-offset="100617" max-vertical-offset="101133">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="trainedFeatures.txt" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/feature/trainedFeatures.txt">
+      <file leaf-file-name="multisvm.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/multisvm.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1608132">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="feature_0.txt" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/feature/feature_0.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="112047">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="feature_detail0.txt" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/feature/details/feature_detail0.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="224043">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test.tsv" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/test.tsv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="29" selection-start="376" selection-end="376" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="130968">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dataReader.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dataReader.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="24" selection-start="451" selection-end="516" vertical-scroll-proportion="-12.24" vertical-offset="0" max-vertical-offset="1139">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dataDivider.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dataDivider.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="0" selection-start="0" selection-end="683" vertical-scroll-proportion="-5.44" vertical-offset="0" max-vertical-offset="578">
+            <state line="18" column="102" selection-start="679" selection-end="679" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="3026">
               <folding />
             </state>
           </provider>
@@ -134,8 +105,20 @@
         <option value="$PROJECT_DIR$/trainNLTKBayes" />
         <option value="$PROJECT_DIR$/trainedFeatures.txt" />
         <option value="$PROJECT_DIR$/dataReader.py" />
+        <option value="$PROJECT_DIR$/bigramExtract.py" />
+        <option value="$PROJECT_DIR$/dictionary/tempDictionary.txt" />
+        <option value="$PROJECT_DIR$/dictionary/tempUniGramFeatures" />
         <option value="$PROJECT_DIR$/svm.py" />
+        <option value="$PROJECT_DIR$/models/Movie_Reviews-1.model" />
+        <option value="$PROJECT_DIR$/Results/SVM-C-50" />
+        <option value="$PROJECT_DIR$/data/test.tsv" />
         <option value="$PROJECT_DIR$/trainNLTKBayes.py" />
+        <option value="$PROJECT_DIR$/Results/Naive_Bayes" />
+        <option value="$PROJECT_DIR$/Results/SVM-C-50(single sent,on test)" />
+        <option value="$PROJECT_DIR$/Results/SVM-C-50(all phrase,on-train)" />
+        <option value="$PROJECT_DIR$/multisvm.py" />
+        <option value="$PROJECT_DIR$/dictionary/tempDictionaryn.txt" />
+        <option value="$PROJECT_DIR$/binsvm.py" />
       </list>
     </option>
   </component>
@@ -145,7 +128,7 @@
     <option name="width" value="1616" />
     <option name="height" value="876" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -171,6 +154,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -189,9 +173,64 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="python" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="python" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="python" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="python" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dictionary" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="python" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="python" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="python" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="python" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Results" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -212,6 +251,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Sushil-PC\Dropbox\SentimentalAnalysis-shared\python\data" />
       <recent name="C:\Users\Sushil-PC\Dropbox\SentimentalAnalysis-shared\python\dictionary" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -221,67 +261,7 @@
       <recent name="C:\Users\Sushil-PC\Dropbox\SentimentalAnalysis-shared\python\feature\details" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.trainNLTKBayes (1)">
-    <configuration default="false" name="dataDivider" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="C:/Python275/python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="python" />
-      <option name="SCRIPT_NAME" value="C:\Users\Sushil-PC\Dropbox\SentimentalAnalysis-shared\python\dataDivider.py" />
-      <option name="PARAMETERS" value="" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="trainNLTKBayes" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="python" />
-      <option name="SCRIPT_NAME" value="C:\Users\Sushil-PC\Dropbox\SentimentalAnalysis-shared\python\trainNLTKBayes.py" />
-      <option name="PARAMETERS" value="" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Unittests in C:\Users\Sushil-PC\Dropbox\SentimentalAnalysis-shared\python" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="python" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="$PROJECT_DIR$" />
-      <option name="TEST_TYPE" value="TEST_FOLDER" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PUREUNITTEST" value="true" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.binsvm">
     <configuration default="false" name="trainNLTKBayes (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -312,7 +292,61 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="python" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/svm.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\Sushil-PC\Dropbox\SentimentalAnalysis-shared\python\binsvm.py" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="bigramExtract" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="python" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/bigramExtract.py" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="binsvm" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="python" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/binsvm.py" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="multisvm" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="python" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/multisvm.py" />
       <option name="PARAMETERS" value="" />
       <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
@@ -440,19 +474,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.dataDivider" />
-      <item index="1" class="java.lang.String" itemvalue="Python.trainNLTKBayes" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in C:\Users\Sushil-PC\Dropbox\SentimentalAnalysis-shared\python" />
-      <item index="3" class="java.lang.String" itemvalue="Python.trainNLTKBayes (1)" />
-      <item index="4" class="java.lang.String" itemvalue="Python.svm" />
+      <item index="0" class="java.lang.String" itemvalue="Python.trainNLTKBayes (1)" />
+      <item index="1" class="java.lang.String" itemvalue="Python.svm" />
+      <item index="2" class="java.lang.String" itemvalue="Python.bigramExtract" />
+      <item index="3" class="java.lang.String" itemvalue="Python.binsvm" />
+      <item index="4" class="java.lang.String" itemvalue="Python.multisvm" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.trainNLTKBayes (1)" />
-        <item index="1" class="java.lang.String" itemvalue="Python.svm" />
-        <item index="2" class="java.lang.String" itemvalue="Python.trainNLTKBayes" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in C:\Users\Sushil-PC\Dropbox\SentimentalAnalysis-shared\python" />
-        <item index="4" class="java.lang.String" itemvalue="Python.dataDivider" />
+        <item index="0" class="java.lang.String" itemvalue="Python.binsvm" />
+        <item index="1" class="java.lang.String" itemvalue="Python.trainNLTKBayes (1)" />
+        <item index="2" class="java.lang.String" itemvalue="Python.multisvm" />
+        <item index="3" class="java.lang.String" itemvalue="Python.svm" />
+        <item index="4" class="java.lang.String" itemvalue="Python.bigramExtract" />
       </list>
     </recent_temporary>
   </component>
@@ -483,33 +517,33 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297587" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328877" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24952501" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13932869" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13932869" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39973262" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27406418" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27308193" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297587" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.328877" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328877" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39973262" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -519,9 +553,9 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24952501" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13932869" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27479893" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27272728" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -543,11 +577,14 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/dataReader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="61" column="10" selection-start="1727" selection-end="1727" vertical-scroll-proportion="0.0" vertical-offset="1037" max-vertical-offset="1156" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/trainNLTKBayes.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="20" selection-start="848" selection-end="848" vertical-scroll-proportion="0.0" vertical-offset="223" max-vertical-offset="714">
-          <folding />
-        </state>
+        <state line="33" column="20" selection-start="848" selection-end="848" vertical-scroll-proportion="0.0" vertical-offset="223" max-vertical-offset="714" />
       </provider>
     </entry>
     <entry file="file://C:/Python275/Lib/site-packages/nltk/stem/porter.py">
@@ -567,38 +604,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dataDivider.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="15" selection-start="682" selection-end="682" vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="578">
-          <folding />
-        </state>
+        <state line="27" column="15" selection-start="682" selection-end="682" vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="578" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dataReader.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="10" selection-start="1727" selection-end="1727" vertical-scroll-proportion="0.0" vertical-offset="1037" max-vertical-offset="1156">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/train">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="27" selection-start="1499" selection-end="1499" vertical-scroll-proportion="0.0" vertical-offset="623" max-vertical-offset="1241" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/trainNLTKBayes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="20" selection-start="848" selection-end="848" vertical-scroll-proportion="0.0" vertical-offset="223" max-vertical-offset="714">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Python275/Lib/site-packages/nltk/stem/porter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="555" column="0" selection-start="19784" selection-end="19784" vertical-scroll-proportion="0.0" vertical-offset="9435" max-vertical-offset="10642" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/train.tsv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="501772" />
+        <state line="62" column="89" selection-start="1867" selection-end="1867" vertical-scroll-proportion="0.0" vertical-offset="1054" max-vertical-offset="1139" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data/train_0.tsv">
@@ -608,73 +619,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dataDivider.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="15" selection-start="682" selection-end="682" vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="578">
-          <folding />
-        </state>
+        <state line="27" column="15" selection-start="682" selection-end="682" vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="578" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dataReader.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="89" selection-start="1867" selection-end="1867" vertical-scroll-proportion="0.0" vertical-offset="1054" max-vertical-offset="1139">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/train_0.tsv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="14960" />
+        <state line="62" column="89" selection-start="1867" selection-end="1867" vertical-scroll-proportion="0.0" vertical-offset="1054" max-vertical-offset="1156" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dataDivider.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="15" selection-start="682" selection-end="682" vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="578">
-          <folding />
-        </state>
+        <state line="0" column="7" selection-start="7" selection-end="7" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="578" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dataReader.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="89" selection-start="1867" selection-end="1867" vertical-scroll-proportion="0.0" vertical-offset="1054" max-vertical-offset="1156">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1156" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dataDivider.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="7" selection-start="7" selection-end="7" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="578">
-          <folding />
-        </state>
+        <state line="0" column="7" selection-start="7" selection-end="7" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="578" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dataReader.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1156">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dataDivider.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="7" selection-start="7" selection-end="7" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="578">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dataReader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1156">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1156" />
       </provider>
     </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_execfile.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="36" column="0" selection-start="1164" selection-end="1164" vertical-scroll-proportion="0.8065327" vertical-offset="291" max-vertical-offset="714" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/train_0.tsv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="14960" />
       </provider>
     </entry>
     <entry file="file://C:/Python275/Lib/site-packages/nltk/stem/porter.py">
@@ -702,11 +677,6 @@
         <state line="965" column="0" selection-start="32825" selection-end="32825" vertical-scroll-proportion="0.0" vertical-offset="16145" max-vertical-offset="23647" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/train">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="16" selection-start="301" selection-end="301" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1241" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/feature/feature_1.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="475" />
@@ -722,11 +692,6 @@
         <state line="116" column="1" selection-start="904" selection-end="904" vertical-scroll-proportion="0.93061227" vertical-offset="1516" max-vertical-offset="84337" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/trainML.tsv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2653105" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/feature/feature_4.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4636" column="5" selection-start="38848" selection-end="38848" vertical-scroll-proportion="-3.0196078" vertical-offset="78658" max-vertical-offset="84541" />
@@ -739,70 +704,133 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/feature/feature_0.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="532899">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="532899" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/feature/details/feature_detail0.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="224043">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/test.tsv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="29" selection-start="376" selection-end="376" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="130968">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="224043" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/feature/trainedFeatures.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1608132">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1608132" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data/metadata.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="515">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="515" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dataDivider.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="0" selection-end="683" vertical-scroll-proportion="-5.44" vertical-offset="0" max-vertical-offset="578">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dataReader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="24" selection-start="451" selection-end="516" vertical-scroll-proportion="-12.24" vertical-offset="0" max-vertical-offset="1139">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/trainNLTKBayes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="144" column="58" selection-start="5930" selection-end="5930" vertical-scroll-proportion="-13.84" vertical-offset="2102" max-vertical-offset="2601">
-          <folding />
-        </state>
+        <state line="8" column="0" selection-start="0" selection-end="683" vertical-scroll-proportion="-5.44" vertical-offset="0" max-vertical-offset="578" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dictionary/stemDictionary.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="171666">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="171666" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataReader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="24" selection-start="451" selection-end="516" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="1139" />
+      </provider>
+    </entry>
+    <entry file="file://C:/Python275/Lib/site-packages/nltk/corpus/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="171" column="0" selection-start="7078" selection-end="7078" vertical-scroll-proportion="0.0" vertical-offset="2599" max-vertical-offset="4607" />
+      </provider>
+    </entry>
+    <entry file="file://C:/Python275/Lib/string.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="0" selection-start="1415" selection-end="1415" vertical-scroll-proportion="0.0" vertical-offset="372" max-vertical-offset="11016" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bigramExtract.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="57" selection-start="385" selection-end="385" vertical-scroll-proportion="-1.6666666" vertical-offset="153" max-vertical-offset="867" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libsvm-3.18/libsvm-3.18/python/README">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="219" column="39" selection-start="6929" selection-end="6929" vertical-scroll-proportion="0.33190578" vertical-offset="3568" max-vertical-offset="6341" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trainNLTKBayes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="144" column="58" selection-start="5935" selection-end="5935" vertical-scroll-proportion="-5.8627453" vertical-offset="2149" max-vertical-offset="2601" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Results/Naive_Bayes(neg)">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="38" selection-start="512" selection-end="512" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="120666" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Results/SVM-C-50(all phrase,on-train)">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="7" selection-start="631" selection-end="631" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="442" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/test.tsv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7688" column="45" selection-start="0" selection-end="385027" vertical-scroll-proportion="-3.5294118" vertical-offset="130516" max-vertical-offset="130968" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/trainML.tsv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="21" selection-start="485" selection-end="485" vertical-scroll-proportion="0.297593" vertical-offset="0" max-vertical-offset="2653105" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Results/SVM-C-50(single sent,on test)">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="0" selection-start="607" selection-end="607" vertical-scroll-proportion="0.7435388" vertical-offset="0" max-vertical-offset="2006" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dictionary/tempUniGramDictionary">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="6" selection-start="0" selection-end="115480" vertical-scroll-proportion="0.49418604" vertical-offset="0" max-vertical-offset="225301" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dictionary/tempDictionary.txt">
+      <provider editor-type-id="LargeFileEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="7" selection-start="162" selection-end="162" vertical-scroll-proportion="0.5271318" vertical-offset="0" max-vertical-offset="837046" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libsvm-3.18/libsvm-3.18/python/svm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="82" column="0" selection-start="2253" selection-end="2253" vertical-scroll-proportion="0.0" vertical-offset="1394" max-vertical-offset="5491">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/svm.py">
+    <entry file="file://$PROJECT_DIR$/dictionary/tempDictionaryn.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="43" selection-start="1986" selection-end="1994" vertical-scroll-proportion="0.33197555" vertical-offset="721" max-vertical-offset="3043">
+        <state line="5942" column="8" selection-start="54378" selection-end="54378" vertical-scroll-proportion="0.0" vertical-offset="100617" max-vertical-offset="101133">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/multisvm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="102" selection-start="679" selection-end="679" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="3026">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/binsvm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="18" selection-start="1253" selection-end="1253" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3196">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/train_0.tsv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="30" selection-start="855" selection-end="855" vertical-scroll-proportion="0.16831683" vertical-offset="0" max-vertical-offset="14960">
           <folding />
         </state>
       </provider>

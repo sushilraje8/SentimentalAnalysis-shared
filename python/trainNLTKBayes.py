@@ -40,7 +40,7 @@ def get_word_list(sentences, index):
                     word_list[index].append("not_"+stemmer.stem(word_tag.lower()))# if word_tag[1] in ['WRB', 'VBZ','VBP','VBN', 'VBG', 'VBD', 'VB', 'RBS', 'RBR', 'RB', 'JJS', 'JJR', 'JJ' ]]) #CLEAN document!!
 
     #word_list[index] = list(set(word_list[index])) # eliminating duplicates)
-    print word_list#[index]
+    #print word_list#[index]
 
 def prune_features(features):
     for i in range(0, 5):
@@ -102,7 +102,7 @@ def classify(sentences):
                     for j in range(0, 5):
                         score = polarity.index(max(polarity))
                         if score - get_sentence_score(sentence) != 0:
-                            print j, word, feature_polarity[j][word], feature_polarity[j][word]/total_words[i], 'LP: ',(feature_polarity[i][word] + 1.0) / (2.0 * total_words[i])
+                            print j, word, feature_polarity[j][word], 1.0*feature_polarity[j][word]/total_words[i], 'LP: ',(feature_polarity[i][word] + 1.0) / (2.0 * total_words[i])
 
             score = polarity.index(max(polarity))
             if score - get_sentence_score(sentence) != 0:
@@ -142,7 +142,7 @@ def get_file_lines(file, mode='r'):
 def main():
     for i in range(0, 5):
         get_word_list(get_file_lines("data/train_" + str(i) + ".tsv"), i)
-    train(get_file_lines('dictionary/tempDictionary.txt'))
+    train(get_file_lines('dictionary/tempUniGramDictionary'))
     classify(get_file_lines('data/test.tsv'))
 
 main()

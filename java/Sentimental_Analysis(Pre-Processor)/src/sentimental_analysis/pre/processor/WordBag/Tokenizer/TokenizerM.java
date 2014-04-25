@@ -46,7 +46,6 @@ public class TokenizerM {
         PartsofSpeechFilter POSF = new PartsofSpeechFilter() ;
         for (String sentence : Sentences ){
             tokens.addAll(Arrays.asList((NF.filterNames(SWF.filterStopWords(cleanWord(POSF.filterNouns(tokenizer.tokenize(sentence)))))))); 
-            
         }
         return new HashSet<>(tokens);
     }

@@ -38,6 +38,7 @@ def get_sentence_scores(train_data):
         if curr_indx != prev_indx:
             tokens = [word for word in word_tokenize(str(line.split("\t")[2]))]
             sentences.append(tokens)
+            scores.append(int(line.split("\t")[3]))
             """
             stemed_tokens = [stemmer.stem(word) for word in word_tokenize(str(line.split("\t")[2]))]
             sentences.append(stemed_tokens)
@@ -63,6 +64,7 @@ def prepare_data():
         #pickle_dump_wrapper(y, "data/vector_label")
 
 def train(i):
+    print y[i].__sizeof__(),X.__sizeof__();
     prob = svm_problem(y[i], X)
     linear_kernel = '-t 0 -c 10  -b 1'
     gaussian_kernel = '-t 2 -c 50 -g 50'
