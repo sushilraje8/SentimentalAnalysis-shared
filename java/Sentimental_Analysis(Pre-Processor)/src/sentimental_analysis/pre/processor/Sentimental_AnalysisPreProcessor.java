@@ -29,30 +29,23 @@ public class Sentimental_AnalysisPreProcessor {
      */
     
     public static void main(String[] args)  {
-         Sentimental_AnalysisPreProcessor SAP = new Sentimental_AnalysisPreProcessor();
-         TokenizerM tokenizerM = new TokenizerM();
-         tokenizerM.setUp();
-         String[] Sentences = SAP.getData(1,6000);//
-         Set tokens = tokenizerM.getTokens(Sentences);
-        try {
-            FileWriter dictionary = new FileWriter("C:\\Users\\Sushil-PC\\Dropbox\\SentimentalAnalysis-shared\\python\\dictionary\\tempDictionarywonouns.txt");
-            System.out.println(StringUtils.join(tokens,","));
-            dictionary.write(StringUtils.join(tokens,"\n"));
-            dictionary.close();
-        } catch (IOException ex) {
-            Logger.getLogger(Sentimental_AnalysisPreProcessor.class.getName()).log(Level.SEVERE, null, ex);
-        }
+        Sentimental_AnalysisPreProcessor SAP = new Sentimental_AnalysisPreProcessor();
+        TokenizerM tokenizerM = new TokenizerM();
+        tokenizerM.setUp();
+        String[] Sentences = SAP.getData("trainML.tsv",1,6000);//
+        Set tokens = tokenizerM.getTokens(Sentences);
+        SAP.saveTokens("tempDictionarywonouns.txt",tokens);
          
         
     }
-    protected String[] getData(int start_line, int number_of_sentences){
+    protected String[] getData(String file_name, int start_line, int number_of_sentences){
         
         String line = "";
         String[] lineContents = new String[4];
         int line_counter = 1,current_sentence = -1, previous_sentence = -1, sentence_counter = 0;
         String[] fData = new String[number_of_sentences];
         try {
-            BufferedReader buffer = new BufferedReader(new FileReader("C:\\Users\\Sushil-PC\\Dropbox\\SentimentalAnalysis-shared\\python\\data\\trainML.tsv"));
+            BufferedReader buffer = new BufferedReader(new FileReader("C:\\Users\\Sushil-PC\\Dropbox\\SentimentalAnalysis-shared\\python\\data\\"+file_name));
             while((line = buffer.readLine()) != null){
                 lineContents = line.split("\t");
                 current_sentence = Integer.parseInt(lineContents[1]);
@@ -91,6 +84,7 @@ public class Sentimental_AnalysisPreProcessor {
         }
         return null;
     }
+    /*
      public Set<String> filterTokens(String[] tokens){
         ArrayList<String> tokenSet = new ArrayList<>();
         StopWordFilter SWF = new StopWordFilter();
@@ -98,4 +92,18 @@ public class Sentimental_AnalysisPreProcessor {
         tokenSet.addAll(Arrays.asList(NF.filterNames(SWF.filterStopWords(tokens))));
         return new HashSet<>(tokenSet);
     }
+     */
+     protected void saveTokens(String dictionary_name, Set tokens){
+        try {
+            FileWriter dictionary = new FileWriter("C:\\Users\\Sushil-PC\\Dropbox\\SentimentalAnalysis-shared\\python\\dictionary\\"+dictionary_name);
+            System.out.println(StringUtils.join(tokens,","));
+            dictionary.write(StringUtils.join(tokens,"\n"));
+            dictionary.close();
+        } catch (IOException ex) {
+            Logger.getLogger(Sentimental_AnalysisPreProcessor.class.getName()).log(Level.SEVERE, null, ex);
+        }
+     
+     }
+     
+     
 }

@@ -9,7 +9,14 @@ import sentimental_analysis.pre.processor.WordBag.Tokenizer.TokenizerM;
 public class Sentimental_AnalysisDictStats extends Sentimental_AnalysisPreProcessor{
     
     public static void main(String[] args){
-        System.out.print("I am here");
+        Sentimental_AnalysisPreProcessor SAP = new Sentimental_AnalysisPreProcessor();
+         TokenizerM tokenizerM = new TokenizerM();
+         tokenizerM.setUp();
+         for(int i=0; i < 2; i++){
+            String[] Sentences = SAP.getData("train_"+i+".tsv",1,6000);//
+            Set tokens = tokenizerM.getTokens(Sentences);
+         }
+         
         
     
     }
