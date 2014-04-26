@@ -39,7 +39,7 @@ public class PartsofSpeechFilter {
         Integer[] positions = getTagstoInclude(tags);
         for(Integer pos:positions ){
             newTokens.add(tokens[pos]);
-            System.out.println(tokens[pos]);
+            //System.out.println(tokens[pos]);
         }
         return newTokens.toArray (new String [newTokens.size ()]);                   
     }
