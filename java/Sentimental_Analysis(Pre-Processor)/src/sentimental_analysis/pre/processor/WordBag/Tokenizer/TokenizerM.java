@@ -15,6 +15,7 @@ import java.util.logging.Logger;
 import opennlp.tools.tokenize.TokenizerME;
 import opennlp.tools.tokenize.TokenizerModel;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
 /**
@@ -47,14 +48,37 @@ public class TokenizerM {
         for (String sentence : Sentences ){
             tokens.addAll(Arrays.asList(SW.stem(NF.filterNames(SWF.filterStopWords(cleanWord(POSF.filterNouns(tokenizer.tokenize(sentence)))))))); 
         }
+        tokens = filterTokensByFrequency(tokens, 5);
+        return new HashSet<>(tokens);
+    }
+    public HashSet<String> fastTokenizer(String[] Sentences){
+        ArrayList<String> tokens = new ArrayList<>();
+        StopWordFilter SWF = new StopWordFilter();
+        stemmerWrap SW = new stemmerWrap();
+        for (String sentence : Sentences ){
+            
+            tokens.addAll(Arrays.asList(SW.stem(tokenizer.tokenize(sentence)))); 
+        }
+        tokens = filterTokensByFrequency(tokens, 5);
         return new HashSet<>(tokens);
     }
     private String[] cleanWord(String[] tokens){
         int i = 0;
         for( String token : tokens){
             if(!token.matches("[0-9]+|n\'t|\'s")){
-                tokens[i] = token.replaceAll("(\'|\")","");
+                tokens[i] = token.replaceAll("(\'|\")","").toLowerCase();
             }
+        }
+        return tokens;
+    }
+    
+    private ArrayList<String> filterTokensByFrequency(ArrayList<String> tokens, int frequency){
+        for (int i = 0; i < tokens.size(); i++) {
+            if(Collections.frequency(tokens, tokens.get(i)) < frequency ){
+                tokens.remove(i);
+                i--;
+            }
+            i++;
         }
         return tokens;
     }
