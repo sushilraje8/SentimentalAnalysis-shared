@@ -63,7 +63,7 @@ def negate_Ngram(words):
         result.append(negated)
         if prev:
             bigram = prev + " " + negated
-            result.append(bigram)
+            #result.append(bigram)
             if pprev:
                 trigram = pprev + " " + bigram
                 #result.append(trigram)
@@ -76,10 +76,17 @@ def negate_Ngram(words):
             negation = False
     return result
 
+def filterNouns(words):
+    word_tags = pos_tag(words)
+    return [word_tag[0] for word_tag in word_tags if word_tag[1] not in ["NN", "NNP", "NNS", "NN$"]]
+
 
 def calculate_class_priori():
     doc_sizes = [len(lines[i]) for i in range(0, 5)]
     return [(1.0*doc_sizes[i]/sum(doc_sizes)) for i in range(0, 5)]
+
+
+
 
 def train(threshold):
     global class_priori, class_cond, class_total
@@ -103,9 +110,32 @@ def train(threshold):
                     break
             dump_features(i, class_cond[i])
         class_total[i] = sum(class_cond[i].values())
-        class_cond[i] = []
-
+    prune_features()
     print class_priori, class_total, class_cond
+
+
+def prune_features():
+    print "Pruning Features....."
+    for i in range(0, 5):
+        for keys in read_features(i):
+            print keys
+            print Mutual_Info(keys)
+
+def Mutual_Info(word):
+    print "Calculating Mutual Info......"
+    total = sum(class_total);
+    MI = 0
+    for i in range(0, 5):
+        joint_prob_cw = (class_cond[i][word] + 1) / total  #laplace smoothing
+        prob_w = sum(class_cond[j][word] for j in range(0, 5)) / total
+        prob_c = class_total[i] / total
+
+        joint_prob_cnw = (class_total[i] - class_cond[i][word]) / total
+        prob_nw = sum( (class_total[j] - class_cond[j][word]) for j in range(0, 5)) / total
+        MI += joint_prob_cw * log10( joint_prob_cw / ( prob_w * prob_c ) ) / (2.30258)
+        MI += joint_prob_cnw * log10( joint_prob_cnw / ( prob_nw * prob_c ) ) / (2.30258)
+    return MI
+
 
 def classify(lines):
     posteriori = [0, 0, 0, 0, 0]
@@ -172,7 +202,6 @@ def get_sentence_canonical(lines):
 
 def get_sentence_details(lines, i):
     return lines.split("\t")[i];
-
 
 prepare_data()
 train(5) #passing threshold a pre-pruning
