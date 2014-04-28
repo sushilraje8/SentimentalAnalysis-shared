@@ -115,14 +115,25 @@ def train(threshold):
 
 
 def prune_features():
+    feature_MI = MyDict()
     print "Pruning Features....."
     for i in range(0, 5):
         for keys in read_features(i):
-            print keys
-            print Mutual_Info(keys)
+            feature_MI[keys] = Mutual_Info(keys)
+            max_MI = max(data for data in feature_MI.values())
+            min_MI = min(data for data in feature_MI.values())
+            threshold = ((max_MI - min_MI)/2) + min_MI
+            for fMI in feature_MI:
+                fMI = fMI.strip()
+                for j in range(0, 5):
+                    if class_cond[j].has_key(fMI) and threshold > class_cond[j][fMI]:
+                        print "Length", len(class_cond[j])
+                        del class_cond[j][fMI]
+                        print "Length", len(class_cond[j])
+
 
 def Mutual_Info(word):
-    print "Calculating Mutual Info......"
+    #print "Calculating Mutual Info......"
     total = sum(class_total);
     MI = 0
     for i in range(0, 5):
