@@ -11,11 +11,11 @@ from sklearn import metrics
 from sklearn import linear_model, naive_bayes, svm
 
 #configure
-lem_ch = 2
-vect_ch = 1
-algo_ch = 1
-param_ch = [1, 10, 10]
-
+lem_ch = 2    #[1 only tokenize, 2 tokenize and stem, 3 tokenize stem and noun filters 4 Lemma Tokenizer]
+vect_ch = 1   #[1 Tf-Idf vectorizer, 2 Count Vectorizer]
+algo_ch = 2   #[1 Multi naive Bayes, 2 SVM, 3 Logistic ]
+param_ch = 10 #[alpga for M naive bayes, C for svm and Logistic]
+n_gram = 1    #[n_gram for N gram]
 
 corpus = []
 corpus_test = []
@@ -29,7 +29,7 @@ def get_file_lines(file, mode='r'):
     file_lines = file_handler.readlines()
     file_handler.close()
     return file_lines
-opt = []
+
 
 class Lemmaword_tokenizer(object):
     def __init__(self,opt):
@@ -64,19 +64,19 @@ for i in range(0, 5):
 
 
 if vect_ch == 1:
-    vectorizer = TfidfVectorizer(lowercase=True,tokenizer=word_tokenize,ngram_range=(1, 3),token_pattern=r'\b\w+\b', stop_words='english', use_idf=1)
+    vectorizer = TfidfVectorizer(lowercase=True,tokenizer=word_tokenize,ngram_range=(1,n_gram),token_pattern=r'\b\w+\b', stop_words='english', use_idf=1)
 else:
-    vectorizer = CountVectorizer(ngram_range=(1, 3),token_pattern=r'\b\w+\b',tokenizer=Lemmaword_tokenizer(lem_ch), stop_words='english')
+    vectorizer = CountVectorizer(ngram_range=(1,n_gram),token_pattern=r'\b\w+\b',tokenizer=Lemmaword_tokenizer(lem_ch), stop_words='english')
 
 X = vectorizer.fit_transform(corpus)
 X_test = vectorizer.transform(corpus_test)
 
 if algo_ch == 1:
-    clf = naive_bayes.MultinomialNB(alpha=param_ch[0])
+    clf = naive_bayes.MultinomialNB(alpha=param_ch)
 elif algo_ch == 2:
-    clf = svm.SVC(kernel='rbf',C=param_ch[1])
+    clf = svm.SVC(kernel='rbf',C=param_ch)
 elif algo_ch == 3:
-    clf = linear_model.LogisticRegression(C=param_ch[2])
+    clf = linear_model.LogisticRegression(C=param_ch)
 
 
 
